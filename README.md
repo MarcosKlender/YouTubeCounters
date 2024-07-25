@@ -35,7 +35,7 @@ Check the statistics of your favorite youtube channels!
 
 YouTube Counters is a simple JavaScript application that utilizes the YouTube API to search for channels and retrieve the number of subscribers and total views. This project aims to provide users a quick access to important metrics about their favorite channels.
 
-Features
+**Features**
 - Channel Search: Users can search for YouTube channels by name.
 - Subscriber Count: Displays the total number of subscribers for each channel.
 - View Count: Shows the total number of views across all videos for the channel.
