@@ -1,43 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>YouTube Counters</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.4/dist/tailwind.min.css" rel="stylesheet">
-</head>
-<body class="bg-gray-100 flex flex-col min-h-screen">
-    <!-- Menú Superior -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.4/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-gray-100 flex flex-col min-h-screen">
     <header class="bg-red-700 text-white py-4">
-        <div class="container mx-auto">
-            <h1 class="text-2xl font-semibold text-center">YouTube Counters</h1>
-        </div>
+      <div class="container mx-auto">
+        <h1 class="text-2xl font-semibold text-center">YouTube Counters</h1>
+      </div>
     </header>
 
-    <!-- Contenido Principal (Centrado Vertical y Horizontalmente) -->
-    <main class="flex-grow flex items-center justify-center">
-        <div class="max-w-md bg-white p-6 rounded-lg shadow-lg">
-            <h2 class="mb-4 text-center">¡Consulta las estadísticas de tus canales favoritos!</h2>
+    <main class="flex flex-grow items-center justify-center">
+      <div id="channelForm" class="max-w-md bg-white p-6 rounded-lg shadow-lg">
+        <h2 class="mb-4 text-center">
+          ¡Consulta las estadísticas de tus canales favoritos!
+        </h2>
 
-            <div class="mb-4">
-                <input type="text" id="channelSearch" placeholder="Escribe el nombre del canal" class="w-full py-2 px-3 border rounded-lg shadow-md focus:outline-none focus:border-red-500">
-            </div>
-
-            <div class="flex items-center justify-center">
-                <button id="searchButton" class="bg-red-700 text-white px-4 py-2 rounded-lg hover:bg-red-600 focus:outline-none focus:bg-red-600">Buscar</button>
-            </div>
-
-            <div id="channelInfo" class="mt-4"></div>
+        <div class="mb-4">
+          <input
+            type="text"
+            id="channelSearch"
+            placeholder="Escribe el nombre del canal"
+            class="w-full py-2 px-3 border rounded-lg shadow-md focus:outline-none focus:border-red-500"
+          />
         </div>
+
+        <div class="flex items-center justify-center">
+          <button
+            id="searchButton"
+            class="bg-red-700 text-white px-4 py-2 rounded-lg hover:bg-red-600 focus:outline-none focus:bg-red-600"
+          >
+            Buscar
+          </button>
+        </div>
+    </div>
+
+    <div id="channelInfo"></div>
     </main>
 
-    <!-- Footer -->
     <footer class="bg-red-700 text-white py-2">
-        <div class="container mx-auto text-center">
-            <a href="https://marcosklender.com" target="_blank" class="font-semibold text-xs">© 2024 MarcosKlender | Ningún derecho reservado.</a>
-        </div>
+      <div class="container mx-auto text-center">
+        <a
+          href="https://marcosklender.com"
+          target="_blank"
+          class="font-semibold text-xs"
+          >© 2024 MarcosKlender | Ningún derecho reservado.</a
+        >
+      </div>
     </footer>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
