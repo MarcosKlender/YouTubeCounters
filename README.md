@@ -19,8 +19,7 @@ Check the statistics of your favorite youtube channels!
 
 </div>
 
-![Screenshot](https://i.ibb.co/P9FrpCc/You-Tube-Counters.webp)
-
+![Screenshot](https://github.com/user-attachments/assets/eea95881-0b45-4bc8-a9c6-d3f7f9ca266a)
 
 ## Table of Contents
 
