@@ -1,60 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>YouTube Counters</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.4/dist/tailwind.min.css"
-      rel="stylesheet"
-    />
-  </head>
-  <body class="bg-gray-100 flex flex-col min-h-screen">
-    <header class="bg-red-700 text-white py-4">
-      <div class="container mx-auto">
-        <h1 class="text-2xl font-semibold text-center">YouTube Counters</h1>
-      </div>
-    </header>
 
-    <main class="flex flex-grow items-center justify-center">
-      <div id="channelForm" class="max-w-md bg-white p-6 rounded-lg shadow-lg">
-        <h2 class="mb-4 text-center">
-          ¡Consulta las estadísticas de tus canales favoritos!
-        </h2>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Consulta estadísticas de YouTube para tus canales favoritos." />
+  <meta name="keywords" content="YouTube, estadísticas, contador de suscriptores" />
+  <title>YouTube Counters</title>
+  <link rel="icon" href="favicon.png" type="image/png" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+</head>
 
-        <div class="mb-4">
-          <input
-            type="text"
-            id="channelSearch"
-            placeholder="Escribe el nombre del canal"
-            class="w-full py-2 px-3 border rounded-lg shadow-md focus:outline-none focus:border-red-500"
-          />
-        </div>
+<body class="bg-gray-100 flex flex-col min-h-screen">
+  <header class="bg-red-700 text-white py-4">
+    <h1 class="text-2xl font-semibold text-center">YouTube Counters</h1>
+  </header>
 
-        <div class="flex items-center justify-center">
-          <button
-            id="searchButton"
-            class="bg-red-700 text-white px-4 py-2 rounded-lg hover:bg-red-600 focus:outline-none focus:bg-red-600"
-          >
-            Buscar
-          </button>
-        </div>
+  <main class="flex flex-grow items-center justify-center">
+    <div id="channelForm" class="max-w-md bg-white p-6 rounded-lg shadow-lg text-center">
+      <h2 class="mb-4 text-center" aria-label="Consulta estadísticas de YouTube">
+        ¡Consulta las estadísticas de tus canales favoritos!
+      </h2>
+
+      <input type="text" id="channelSearch" aria-label="Escribe el nombre del canal de YouTube"
+        placeholder="Escribe el nombre del canal"
+        class="w-full py-2 px-3 border rounded-lg shadow-md focus:outline-none focus:border-red-500" />
+      <p id="errorMessage" class="text-red-500 font-bold text-sm text-left mt-2"></p>
+
+      <button id="searchButton"
+        class="bg-red-700 text-white px-4 py-2 mt-4 rounded-lg hover:bg-red-600 focus:outline-none focus:bg-red-600">
+        Buscar
+      </button>
     </div>
 
     <div id="channelInfo"></div>
-    </main>
+  </main>
 
-    <footer class="bg-red-700 text-white py-2">
-      <div class="container mx-auto text-center">
-        <a
-          href="https://marcosklender.com"
-          target="_blank"
-          class="font-semibold text-xs"
-          >© 2024 MarcosKlender | Ningún derecho reservado.</a
-        >
-      </div>
-    </footer>
+  <footer class="bg-red-700 text-white py-2">
+    <div class="text-center">
+      <a href="https://marcosklender.com" target="_blank" class="font-semibold text-xs">
+        © 2024 MarcosKlender | Ningún derecho reservado.
+      </a>
+    </div>
+  </footer>
 
-    <script src="script.js"></script>
-  </body>
+  <script src="script.js"></script>
+</body>
+
 </html>
